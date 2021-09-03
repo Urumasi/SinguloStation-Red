@@ -66,7 +66,11 @@
 	var/turf/source = get_turf(instrumentObj)
 	if((world.time - MUSICIAN_HEARCHECK_MINDELAY) > last_hearcheck)
 		LAZYCLEARLIST(hearing_mobs)
+<<<<<<< HEAD
 		for(var/mob/M as() in hearers(15, source))
+=======
+		for(var/mob/M in get_hearers_in_view(15, source))
+>>>>>>> 8d48311c5e... Fixes Instruments t2 (#5289)
 			LAZYADD(hearing_mobs, M)
 		last_hearcheck = world.time
 
