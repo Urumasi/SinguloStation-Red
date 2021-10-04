@@ -121,6 +121,7 @@
 /datum/station_trait/quick_shuttle/on_round_start()
 	. = ..()
 	SSshuttle.supply.callTime *= 0.5
+<<<<<<< HEAD
 
 /datum/station_trait/deathrattle_department
 	name = "deathrattled department"
@@ -214,3 +215,5 @@
 	var/obj/item/implant/deathrattle/implant_to_give = new()
 	deathrattle_group.register(implant_to_give)
 	implant_to_give.implant(living_mob, living_mob, TRUE, TRUE)
+=======
+>>>>>>> db0eca4fee... removed deathrattle implant station trait (#5517)
